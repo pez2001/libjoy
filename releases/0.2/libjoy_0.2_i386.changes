@@ -1,0 +1,20 @@
+Format: 1.7
+Date: Sat, 05 Apr 2008 02:57:19 +0200
+Source: libjoy
+Binary: libjoy
+Architecture: source i386
+Version: 0.2
+Distribution: stable
+Urgency: high
+Maintainer: Tim Theede <pez2001@voyagerproject.de>
+Changed-By: Tim Theede <pez2001@voyagerproject.de>
+Description: 
+ libjoy     - libjoy is a small library to easily access joysticks
+Changes: 
+ libjoy (0.2) stable; urgency=high
+ .
+   * some fixes to the state manager,should be fully working now
+Files: 
+ e12bafc128edfe207dfbeb083707d905 247 devel extra libjoy_0.2.dsc
+ aeb573db94da86930f233385d8be602a 36605 devel extra libjoy_0.2.tar.gz
+ 1f2c48e973862b396e81573127107641 15340 devel extra libjoy_0.2_i386.deb

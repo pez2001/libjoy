@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.3">
+  <compounddef id="joytool_8h" kind="file">
+    <compoundname>joytool.h</compoundname>
+    <includes refid="src_2libjoy_8h" local="yes">libjoy.h</includes>
+    <includedby refid="joytool_8c" local="yes">libjoy-dev/libjoy-0.1/src/joytool.c</includedby>
+    <incdepgraph>
+      <node id="20">
+        <label>libjoy.h</label>
+        <link refid="src_2libjoy_8h-source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>libjoy-dev/libjoy-0.1/src/joytool.h</label>
+        <link refid="joytool.h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>linux/joystick.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="joytool_8h_114f754bcab1866cd5dfe8c9d285afc5d" prot="public" static="no">
+        <name>MAX_AXIS</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" line="25" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="joytool_8h_18bb0c7f312bb8665c3377a061dae552c" prot="public" static="no">
+        <name>MAX_BUTTONS</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" line="27" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="joytool_8h_1b5b9c8d9fecc7766b058f710024e7834" prot="public" static="no">
+        <name>DEFAULT_ORDERED_MODE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" line="29" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="joytool_8h_18042d0ef3deb220500d4c3a0c1382f07" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* version_string</definition>
+        <argsstring></argsstring>
+        <name>version_string</name>
+        <initializer> &quot;joytool - Version: 0.1\n\
+ written by Tim &apos;pez2001&apos; Theede (c) 2008\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" line="32" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="joytool_8h_145914b61c9c882fd01b2c7028eee6303" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* helpmsg</definition>
+        <argsstring></argsstring>
+        <name>helpmsg</name>
+        <initializer> &quot;Usage: joytool [OPTION]... [DEV]\n\
+Read values from the joystick device which DEV represents.\n\
+\n\
+  -i &lt;joyid&gt;            set joystick id (0 - (number of joysticks-1))\n\
+  -a &lt;axis id&gt;          set axis id\n\
+  -b &lt;button id&gt;        set button id\n\
+  -w                    waits for the next axis/button event\n\
+  -c                    waits for the next complete axis/button event\n\
+  -t &lt;timeout&gt;          set timeout (ms)\n\
+  -s                    print only the values\n\
+  -k                    keep joytool open\n\
+  -l                    list joysticks found\n\
+  -A                    print number of axes\n\
+  -B                    print number of buttons\n\
+  -N                    print name of joystick\n\
+  -n                    print number of joysticks found\n\
+  -h                    display this help and exit\n\
+  -v                    output version information and exit\n\
+\n\
+If joyid was set [DEV] can be omitted.\n\
+Joystick ids start from 0 and reach to number of joysticks-1.\n\
+You can use the &apos;Any&apos; id to read all buttons/axis.\n\
+\n\
+The -s (short option) prints an easily parseable output.\n\
+ In short mode values will be printed in the following fashion:\n\
+  type(b|a):axis/button id:value.\n\
+\n\
+Timeout counts from the last joystick axis/button change\n\
+ (blame it on the implementation of select at least for now)\n\
+ 20 ms seems to be a reasonable minimum,else you may loose\n\
+ consistency of joystick values returned\n\
+\n\
+The -c (complete option) will wait for an action to be completed,\n\
+ this means that you have to pull the joystick into the middle\n\
+ position back or release the pressed button before it will exit.\n\
+\n\
+Report bugs to &lt;pez2001@voyagerproject.de&gt;.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" line="70" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Copyright<sp/>(C)<sp/>2008<sp/>by<sp/>Tim<sp/>Theede<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/>pez2001@voyagerproject.de<sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify<sp/><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by<sp/><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/>Free<sp/>Software<sp/>Foundation,<sp/>Inc.,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/><sp/>02111-1307,<sp/>USA.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;libjoy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//max<sp/>axis<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_AXIS<sp/>16</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"></highlight><highlight class="comment">//max<sp/>buttons<sp/>supported</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_BUTTONS<sp/>32</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="comment">//default<sp/>is<sp/>ordered<sp/>id<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_ORDERED_MODE<sp/>1</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*version_string<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;joytool<sp/>-<sp/>Version:<sp/>0.1\n\</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/>written<sp/>by<sp/>Tim<sp/>&apos;pez2001&apos;<sp/>Theede<sp/>(c)<sp/>2008\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*helpmsg<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Usage:<sp/>joytool<sp/>[OPTION]...<sp/>[DEV]\n\</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral">Read<sp/>values<sp/>from<sp/>the<sp/>joystick<sp/>device<sp/>which<sp/>DEV<sp/>represents.\n\</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/>-i<sp/>&lt;joyid&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>joystick<sp/>id<sp/>(0<sp/>-<sp/>(number<sp/>of<sp/>joysticks-1))\n\</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/>-a<sp/>&lt;axis<sp/>id&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>axis<sp/>id\n\</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/>-b<sp/>&lt;button<sp/>id&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>button<sp/>id\n\</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/>-w<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waits<sp/>for<sp/>the<sp/>next<sp/>axis/button<sp/>event\n\</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/>-c<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>waits<sp/>for<sp/>the<sp/>next<sp/>complete<sp/>axis/button<sp/>event\n\</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/>-t<sp/>&lt;timeout&gt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>timeout<sp/>(ms)\n\</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/>-s<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print<sp/>only<sp/>the<sp/>values\n\</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/>-k<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keep<sp/>joytool<sp/>open\n\</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/>-l<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>list<sp/>joysticks<sp/>found\n\</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/>-A<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print<sp/>number<sp/>of<sp/>axes\n\</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>-B<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print<sp/>number<sp/>of<sp/>buttons\n\</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>-N<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print<sp/>name<sp/>of<sp/>joystick\n\</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/>-n<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print<sp/>number<sp/>of<sp/>joysticks<sp/>found\n\</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/>-h<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>display<sp/>this<sp/>help<sp/>and<sp/>exit\n\</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/>-v<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output<sp/>version<sp/>information<sp/>and<sp/>exit\n\</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral">If<sp/>joyid<sp/>was<sp/>set<sp/>[DEV]<sp/>can<sp/>be<sp/>omitted.\n\</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral">Joystick<sp/>ids<sp/>start<sp/>from<sp/>0<sp/>and<sp/>reach<sp/>to<sp/>number<sp/>of<sp/>joysticks-1.\n\</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral">You<sp/>can<sp/>use<sp/>the<sp/>&apos;Any&apos;<sp/>id<sp/>to<sp/>read<sp/>all<sp/>buttons/axis.\n\</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral">The<sp/>-s<sp/>(short<sp/>option)<sp/>prints<sp/>an<sp/>easily<sp/>parseable<sp/>output.\n\</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/>In<sp/>short<sp/>mode<sp/>values<sp/>will<sp/>be<sp/>printed<sp/>in<sp/>the<sp/>following<sp/>fashion:\n\</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/>type(b|a):axis/button<sp/>id:value.\n\</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral">Timeout<sp/>counts<sp/>from<sp/>the<sp/>last<sp/>joystick<sp/>axis/button<sp/>change\n\</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/>(blame<sp/>it<sp/>on<sp/>the<sp/>implementation<sp/>of<sp/>select<sp/>at<sp/>least<sp/>for<sp/>now)\n\</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/>20<sp/>ms<sp/>seems<sp/>to<sp/>be<sp/>a<sp/>reasonable<sp/>minimum,else<sp/>you<sp/>may<sp/>loose\n\</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/>consistency<sp/>of<sp/>joystick<sp/>values<sp/>returned\n\</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral">The<sp/>-c<sp/>(complete<sp/>option)<sp/>will<sp/>wait<sp/>for<sp/>an<sp/>action<sp/>to<sp/>be<sp/>completed,\n\</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/>this<sp/>means<sp/>that<sp/>you<sp/>have<sp/>to<sp/>pull<sp/>the<sp/>joystick<sp/>into<sp/>the<sp/>middle\n\</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/>position<sp/>back<sp/>or<sp/>release<sp/>the<sp/>pressed<sp/>button<sp/>before<sp/>it<sp/>will<sp/>exit.\n\</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral">\n\</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral">Report<sp/>bugs<sp/>to<sp/>&lt;pez2001@voyagerproject.de&gt;.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+    </programlisting>
+    <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h"/>
+  </compounddef>
+</doxygen>

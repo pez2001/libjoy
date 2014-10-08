@@ -1,0 +1,11 @@
+# KDevelop Custom Project File List
+CMakeLists.txt
+Makefile
+src
+src/CMakeLists.txt
+src/Makefile
+src/joytool.c
+src/joytool.h
+src/libjoy.c
+src/libjoy.h
+src/libjoytest.c

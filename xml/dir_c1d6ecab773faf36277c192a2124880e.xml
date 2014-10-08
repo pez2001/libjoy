@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.3">
+  <compounddef id="dir_c1d6ecab773faf36277c192a2124880e" kind="dir">
+    <compoundname>libjoy-dev/libjoy-0.1/</compoundname>
+    <innerdir refid="dir_675873b7318ad2775ce5e3b2fcdd6295">libjoy-dev/libjoy-0.1/debian/</innerdir>
+    <innerdir refid="dir_eaa9c404b26e522051f6a5f6ef562219">libjoy-dev/libjoy-0.1/src/</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pez2001/libjoy-dev/libjoy-0.1/"/>
+  </compounddef>
+</doxygen>

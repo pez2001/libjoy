@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.3">
+  <compounddef id="dir_eaa9c404b26e522051f6a5f6ef562219" kind="dir">
+    <compoundname>libjoy-dev/libjoy-0.1/src/</compoundname>
+    <innerfile refid="joytool_8c">joytool.c</innerfile>
+    <innerfile refid="joytool_8h">joytool.h</innerfile>
+    <innerfile refid="libjoy_8c">libjoy.c</innerfile>
+    <innerfile refid="src_2libjoy_8h">libjoy.h</innerfile>
+    <innerfile refid="libjoytest_8c">libjoytest.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/"/>
+  </compounddef>
+</doxygen>

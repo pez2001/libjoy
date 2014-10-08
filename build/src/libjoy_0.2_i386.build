@@ -1,0 +1,105 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: source package is libjoy
+dpkg-buildpackage: source version is 0.2
+dpkg-buildpackage: source changed by Tim Theede <pez2001@voyagerproject.de>
+dpkg-buildpackage: host architecture i386
+dpkg-buildpackage: source version without epoch 0.2
+ fakeroot debian/rules clean
+dh_testdir
+dh_testroot
+rm -f build-stamp configure-stamp
+# Add here commands to clean up after the build process.
+/usr/bin/make clean
+make[1]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[1]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+dh_clean 
+ dpkg-source -b libjoy-0.2
+dpkg-source: building libjoy in libjoy_0.2.tar.gz
+dpkg-source: building libjoy in libjoy_0.2.dsc
+ debian/rules build
+dh_testdir
+# Add here commands to configure the package.
+touch configure-stamp
+dh_testdir
+# Add here commands to compile the package.
+/usr/bin/make
+make[1]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[ 33%] Building C object src/CMakeFiles/joy.dir/libjoy.o
+Linking C shared library libjoy.so
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[ 33%] Built target joy
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[ 66%] Building C object src/CMakeFiles/joytool.dir/joytool.o
+Linking C executable joytool
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[ 66%] Built target joytool
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[100%] Building C object src/CMakeFiles/libjoytest.dir/libjoytest.o
+Linking C executable libjoytest
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[100%] Built target libjoytest
+make[2]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[1]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+#docbook-to-man debian/libjoy.sgml > libjoy.1
+touch build-stamp
+ fakeroot debian/rules binary
+dh_testdir
+dh_testroot
+dh_clean -k 
+dh_installdirs
+# Add here commands to install the package into debian/libjoy.
+/usr/bin/make CMAKE_INSTALL_PREFIX=/usr DESTDIR="/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2/debian/libjoy" install
+make[1]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+[ 33%] Built target joy
+[ 66%] Built target joytool
+[100%] Built target libjoytest
+make[2]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+Linking C executable CMakeFiles/CMakeRelink.dir/joytool
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[3]: Betrete Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+Linking C executable CMakeFiles/CMakeRelink.dir/libjoytest
+make[3]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+make[2]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+Install the project...
+-- Install configuration: ""
+-- Install configuration: ""
+-- Installing /home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2/debian/libjoy/usr/bin/joytool
+-- Installing /home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2/debian/libjoy/usr/bin/libjoytest
+-- Installing /home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2/debian/libjoy/usr/lib/libjoy.so
+-- Installing /home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2/debian/libjoy/usr/include/libjoy.h
+make[1]: Verlasse Verzeichnis '/home/pez2001/libjoy-dev/libjoy-0.1/build/src/libjoy-0.2'
+dh_testdir
+dh_testroot
+dh_installchangelogs 
+dh_installdocs
+dh_installexamples
+dh_installman
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dpkg-shlibdeps.orig: warning: format of 'NEEDED libjoy.so' not recognized
+dpkg-shlibdeps.orig: warning: format of 'NEEDED libjoy.so' not recognized
+dh_gencontrol
+dpkg-gencontrol: warning: unknown substitution variable ${misc:Depends}
+dh_md5sums
+dh_builddeb
+dpkg-deb: Baue Paket »libjoy« in »../libjoy_0.2_i386.deb«.
+ dpkg-genchanges
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: full upload; Debian-native package (full source is included)

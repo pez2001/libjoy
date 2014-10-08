@@ -1,0 +1,12 @@
+FILE(REMOVE
+"debian-binary"
+"control"
+"md5sums"
+"debian_package"
+"CMakeFiles/GDCM_deb"
+"libjoy_0.1.1-1_i386.deb"
+"debian-binary"
+"control.tar.gz"
+"data.tar.gz"
+"md5sums"
+)

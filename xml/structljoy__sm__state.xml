@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.3">
+  <compounddef id="structljoy__sm__state" kind="struct" prot="public">
+    <compoundname>ljoy_sm_state</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structljoy__sm__state_12a8426556ade3f00a8f22392f9a45668" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ljoy_sm_state::num_axes</definition>
+        <argsstring></argsstring>
+        <name>num_axes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="230" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_158db68425e678b6cce8c3e5620a89b94" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int ljoy_sm_state::num_buttons</definition>
+        <argsstring></argsstring>
+        <name>num_buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="231" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ljoy_sm_state::axes</definition>
+        <argsstring></argsstring>
+        <name>axes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="232" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ljoy_sm_state::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="233" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_17f36441a33312961db007eae6e22ecd1" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ljoy_sm_state::timestamp</definition>
+        <argsstring></argsstring>
+        <name>timestamp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="234" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ljoy_sm_state::axes</definition>
+        <argsstring></argsstring>
+        <name>axes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h" line="232" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" prot="public" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* ljoy_sm_state::buttons</definition>
+        <argsstring></argsstring>
+        <name>buttons</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h" line="233" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" line="229" bodyfile="/home/pez2001/libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/libjoy.h" bodystart="228" bodyend="235"/>
+    <listofallmembers>
+      <member refid="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>axes</name></member>
+      <member refid="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>axes</name></member>
+      <member refid="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>buttons</name></member>
+      <member refid="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>buttons</name></member>
+      <member refid="structljoy__sm__state_12a8426556ade3f00a8f22392f9a45668" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>num_axes</name></member>
+      <member refid="structljoy__sm__state_158db68425e678b6cce8c3e5620a89b94" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>num_buttons</name></member>
+      <member refid="structljoy__sm__state_17f36441a33312961db007eae6e22ecd1" prot="public" virt="non-virtual"><scope>ljoy_sm_state</scope><name>timestamp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

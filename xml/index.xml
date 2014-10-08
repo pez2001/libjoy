@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.3">
+  <compound refid="structljoy__sm__state" kind="struct"><name>ljoy_sm_state</name>
+    <member refid="structljoy__sm__state_12a8426556ade3f00a8f22392f9a45668" kind="variable"><name>num_axes</name></member>
+    <member refid="structljoy__sm__state_158db68425e678b6cce8c3e5620a89b94" kind="variable"><name>num_buttons</name></member>
+    <member refid="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" kind="variable"><name>axes</name></member>
+    <member refid="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" kind="variable"><name>buttons</name></member>
+    <member refid="structljoy__sm__state_17f36441a33312961db007eae6e22ecd1" kind="variable"><name>timestamp</name></member>
+    <member refid="structljoy__sm__state_1a66111cde88c6fdcfd677ec0ab3e0962" kind="variable"><name>axes</name></member>
+    <member refid="structljoy__sm__state_1e59a2456a9a53ab92ea7211407cc1fcd" kind="variable"><name>buttons</name></member>
+  </compound>
+  <compound refid="debian_2libjoy_2usr_2include_2libjoy_8h" kind="file"><name>libjoy.h</name>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1e8f9388805ee980baaadbc265826c5e8" kind="define"><name>MAX_JOYSTICKS</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_11ea6820dfe1d4194273c7d70cb6d7d20" kind="define"><name>ANY_ID</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1eadbe9dce1864c5403b52017825ed56f" kind="function"><name>ljoy_Open</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_146e4cdb2354f94d9546e6df3a46eb51c" kind="function"><name>ljoy_OpenById</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1e2cbcde4605a04494a76d83ad5cf1704" kind="function"><name>ljoy_GetNameById</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1a4acd83527bfdca8824dfcdd018643ff" kind="function"><name>ljoy_GetJoysticksNum</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1a653d393cb610d631b6971510823bb97" kind="function"><name>ljoy_Close</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_11b628cb5b1c083721ea1cb5caf12aeea" kind="function"><name>ljoy_GetName</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_14670b2012cf0ab2b9eaec8bdcc354d91" kind="function"><name>ljoy_GetAxesNum</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_16b488dc7c2e7de341ad30d7b673fd216" kind="function"><name>ljoy_GetButtonsNum</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_15608e8aa2179c4293a69ff95ce6fac84" kind="function"><name>ljoy_GetEvent</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_119c6e7e1e6957f358fc682ef0c52d564" kind="function"><name>ljoy_GetFilteredEvent</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_16d43d8663eefcc36f97fd4347919b81e" kind="function"><name>ljoy_GetFilteredTypeEvent</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_113e724fc90363145b4ce7a2a23ccb2e3" kind="function"><name>ljoy_GetOrderedMode</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_18a0d4c3031d36e9a37d1154131ed7696" kind="function"><name>ljoy_SetOrderedMode</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_17699bd7f81d2541115c8b0971753ab87" kind="function"><name>ljoy_sm_Init</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_19057ecf3a4fa305d508cd8180247b667" kind="function"><name>ljoy_sm_Shutdown</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1be9d2648d0736eca03b56181ce3d85b9" kind="function"><name>ljoy_sm_AddDevice</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1dde8d850f393261236105ca2bd9ff7c4" kind="function"><name>ljoy_sm_RemoveDevice</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1b283118c7ce06f1c155d6faa5ecc85a2" kind="function"><name>ljoy_sm_GetState</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_15c2c0748fbbb14409ea159b062ed87ac" kind="function"><name>ljoy_sm_Poll</name></member>
+    <member refid="debian_2libjoy_2usr_2include_2libjoy_8h_1b2a15dbe3e804cf7246e95a90eb23df8" kind="function"><name>ljoy_sm_TimeoutPoll</name></member>
+  </compound>
+  <compound refid="src_2libjoy_8h" kind="file"><name>libjoy.h</name>
+    <member refid="src_2libjoy_8h_1e8f9388805ee980baaadbc265826c5e8" kind="define"><name>MAX_JOYSTICKS</name></member>
+    <member refid="src_2libjoy_8h_11ea6820dfe1d4194273c7d70cb6d7d20" kind="define"><name>ANY_ID</name></member>
+    <member refid="src_2libjoy_8h_1eadbe9dce1864c5403b52017825ed56f" kind="function"><name>ljoy_Open</name></member>
+    <member refid="src_2libjoy_8h_146e4cdb2354f94d9546e6df3a46eb51c" kind="function"><name>ljoy_OpenById</name></member>
+    <member refid="src_2libjoy_8h_1e2cbcde4605a04494a76d83ad5cf1704" kind="function"><name>ljoy_GetNameById</name></member>
+    <member refid="src_2libjoy_8h_1a4acd83527bfdca8824dfcdd018643ff" kind="function"><name>ljoy_GetJoysticksNum</name></member>
+    <member refid="src_2libjoy_8h_1a653d393cb610d631b6971510823bb97" kind="function"><name>ljoy_Close</name></member>
+    <member refid="src_2libjoy_8h_11b628cb5b1c083721ea1cb5caf12aeea" kind="function"><name>ljoy_GetName</name></member>
+    <member refid="src_2libjoy_8h_14670b2012cf0ab2b9eaec8bdcc354d91" kind="function"><name>ljoy_GetAxesNum</name></member>
+    <member refid="src_2libjoy_8h_16b488dc7c2e7de341ad30d7b673fd216" kind="function"><name>ljoy_GetButtonsNum</name></member>
+    <member refid="src_2libjoy_8h_15608e8aa2179c4293a69ff95ce6fac84" kind="function"><name>ljoy_GetEvent</name></member>
+    <member refid="src_2libjoy_8h_119c6e7e1e6957f358fc682ef0c52d564" kind="function"><name>ljoy_GetFilteredEvent</name></member>
+    <member refid="src_2libjoy_8h_16d43d8663eefcc36f97fd4347919b81e" kind="function"><name>ljoy_GetFilteredTypeEvent</name></member>
+    <member refid="src_2libjoy_8h_113e724fc90363145b4ce7a2a23ccb2e3" kind="function"><name>ljoy_GetOrderedMode</name></member>
+    <member refid="src_2libjoy_8h_18a0d4c3031d36e9a37d1154131ed7696" kind="function"><name>ljoy_SetOrderedMode</name></member>
+    <member refid="src_2libjoy_8h_17699bd7f81d2541115c8b0971753ab87" kind="function"><name>ljoy_sm_Init</name></member>
+    <member refid="src_2libjoy_8h_19057ecf3a4fa305d508cd8180247b667" kind="function"><name>ljoy_sm_Shutdown</name></member>
+    <member refid="src_2libjoy_8h_1be9d2648d0736eca03b56181ce3d85b9" kind="function"><name>ljoy_sm_AddDevice</name></member>
+    <member refid="src_2libjoy_8h_1dde8d850f393261236105ca2bd9ff7c4" kind="function"><name>ljoy_sm_RemoveDevice</name></member>
+    <member refid="src_2libjoy_8h_1b283118c7ce06f1c155d6faa5ecc85a2" kind="function"><name>ljoy_sm_GetState</name></member>
+    <member refid="src_2libjoy_8h_15c2c0748fbbb14409ea159b062ed87ac" kind="function"><name>ljoy_sm_Poll</name></member>
+    <member refid="src_2libjoy_8h_1b4ecbc7af454d49784a5e0415e512c0c" kind="function"><name>ljoy_sm_TimeoutPoll</name></member>
+    <member refid="src_2libjoy_8h_1af66179d1dedf02aeb174e2b8abb1057" kind="function"><name>ljoy_sm_TimeoutPollExtra</name></member>
+  </compound>
+  <compound refid="joytool_8c" kind="file"><name>joytool.c</name>
+    <member refid="joytool_8c_13c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="joytool_8h" kind="file"><name>joytool.h</name>
+    <member refid="joytool_8h_114f754bcab1866cd5dfe8c9d285afc5d" kind="define"><name>MAX_AXIS</name></member>
+    <member refid="joytool_8h_18bb0c7f312bb8665c3377a061dae552c" kind="define"><name>MAX_BUTTONS</name></member>
+    <member refid="joytool_8h_1b5b9c8d9fecc7766b058f710024e7834" kind="define"><name>DEFAULT_ORDERED_MODE</name></member>
+    <member refid="joytool_8h_18042d0ef3deb220500d4c3a0c1382f07" kind="variable"><name>version_string</name></member>
+    <member refid="joytool_8h_145914b61c9c882fd01b2c7028eee6303" kind="variable"><name>helpmsg</name></member>
+  </compound>
+  <compound refid="libjoy_8c" kind="file"><name>libjoy.c</name>
+    <member refid="libjoy_8c_1e64a743213f6e11e36b37af735c30ad1" kind="variable"><name>ordered_mode</name></member>
+    <member refid="libjoy_8c_17795a2cf5cf0450e0e4cc47fd5324434" kind="variable"><name>sm_refcount</name></member>
+    <member refid="libjoy_8c_1caa92c8f01c1ecf1ea67b2572a348a23" kind="variable"><name>sm_states</name></member>
+    <member refid="libjoy_8c_1df062428b5887d0131807daccbae6d96" kind="variable"><name>sm_state_id_table</name></member>
+    <member refid="libjoy_8c_1de088d6b29f1ab6d7e89f5df7fe87a79" kind="variable"><name>sm_states_num</name></member>
+    <member refid="libjoy_8c_11cf66e28a1f21fe7e2bde3c853b6471f" kind="variable"><name>sm_fds</name></member>
+    <member refid="libjoy_8c_12c68f95d9c2ad7d0e908552d8507cc78" kind="variable"><name>sm_topfd</name></member>
+    <member refid="libjoy_8c_1188da5ff859a6d27fe3fe7b0a6fb73a7" kind="function"><name>ljoy_GetRealId</name></member>
+    <member refid="libjoy_8c_113e724fc90363145b4ce7a2a23ccb2e3" kind="function"><name>ljoy_GetOrderedMode</name></member>
+    <member refid="libjoy_8c_18a0d4c3031d36e9a37d1154131ed7696" kind="function"><name>ljoy_SetOrderedMode</name></member>
+    <member refid="libjoy_8c_1eadbe9dce1864c5403b52017825ed56f" kind="function"><name>ljoy_Open</name></member>
+    <member refid="libjoy_8c_146e4cdb2354f94d9546e6df3a46eb51c" kind="function"><name>ljoy_OpenById</name></member>
+    <member refid="libjoy_8c_1e2cbcde4605a04494a76d83ad5cf1704" kind="function"><name>ljoy_GetNameById</name></member>
+    <member refid="libjoy_8c_1a4acd83527bfdca8824dfcdd018643ff" kind="function"><name>ljoy_GetJoysticksNum</name></member>
+    <member refid="libjoy_8c_1a653d393cb610d631b6971510823bb97" kind="function"><name>ljoy_Close</name></member>
+    <member refid="libjoy_8c_11b628cb5b1c083721ea1cb5caf12aeea" kind="function"><name>ljoy_GetName</name></member>
+    <member refid="libjoy_8c_14670b2012cf0ab2b9eaec8bdcc354d91" kind="function"><name>ljoy_GetAxesNum</name></member>
+    <member refid="libjoy_8c_16b488dc7c2e7de341ad30d7b673fd216" kind="function"><name>ljoy_GetButtonsNum</name></member>
+    <member refid="libjoy_8c_15608e8aa2179c4293a69ff95ce6fac84" kind="function"><name>ljoy_GetEvent</name></member>
+    <member refid="libjoy_8c_119c6e7e1e6957f358fc682ef0c52d564" kind="function"><name>ljoy_GetFilteredEvent</name></member>
+    <member refid="libjoy_8c_16d43d8663eefcc36f97fd4347919b81e" kind="function"><name>ljoy_GetFilteredTypeEvent</name></member>
+    <member refid="libjoy_8c_1e3946357a07ef50d01f909f9ed15efea" kind="function"><name>ljoy_sm_UpdateFds</name></member>
+    <member refid="libjoy_8c_17699bd7f81d2541115c8b0971753ab87" kind="function"><name>ljoy_sm_Init</name></member>
+    <member refid="libjoy_8c_19057ecf3a4fa305d508cd8180247b667" kind="function"><name>ljoy_sm_Shutdown</name></member>
+    <member refid="libjoy_8c_1be9d2648d0736eca03b56181ce3d85b9" kind="function"><name>ljoy_sm_AddDevice</name></member>
+    <member refid="libjoy_8c_1dde8d850f393261236105ca2bd9ff7c4" kind="function"><name>ljoy_sm_RemoveDevice</name></member>
+    <member refid="libjoy_8c_1b283118c7ce06f1c155d6faa5ecc85a2" kind="function"><name>ljoy_sm_GetState</name></member>
+    <member refid="libjoy_8c_1af66179d1dedf02aeb174e2b8abb1057" kind="function"><name>ljoy_sm_TimeoutPollExtra</name></member>
+    <member refid="libjoy_8c_1b4ecbc7af454d49784a5e0415e512c0c" kind="function"><name>ljoy_sm_TimeoutPoll</name></member>
+    <member refid="libjoy_8c_15c2c0748fbbb14409ea159b062ed87ac" kind="function"><name>ljoy_sm_Poll</name></member>
+  </compound>
+  <compound refid="libjoytest_8c" kind="file"><name>libjoytest.c</name>
+    <member refid="libjoytest_8c_13c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="dir_675873b7318ad2775ce5e3b2fcdd6295" kind="dir"><name>libjoy-dev/libjoy-0.1/debian/</name>
+  </compound>
+  <compound refid="dir_60216d86fe328c6711ecb6cd30707269" kind="dir"><name>libjoy-dev/libjoy-0.1/debian/libjoy/usr/include/</name>
+  </compound>
+  <compound refid="dir_a0e36d4eac1c351f6d556505944e1526" kind="dir"><name>libjoy-dev/libjoy-0.1/debian/libjoy/</name>
+  </compound>
+  <compound refid="dir_c1d6ecab773faf36277c192a2124880e" kind="dir"><name>libjoy-dev/libjoy-0.1/</name>
+  </compound>
+  <compound refid="dir_28950d2b5cea87bf378c7fe69bf4c74c" kind="dir"><name>libjoy-dev/</name>
+  </compound>
+  <compound refid="dir_eaa9c404b26e522051f6a5f6ef562219" kind="dir"><name>libjoy-dev/libjoy-0.1/src/</name>
+  </compound>
+  <compound refid="dir_d42028e1a2811c502b35c367c3e5f120" kind="dir"><name>libjoy-dev/libjoy-0.1/debian/libjoy/usr/</name>
+  </compound>
+</doxygenindex>

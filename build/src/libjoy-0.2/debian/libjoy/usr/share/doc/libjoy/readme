@@ -1,0 +1,30 @@
+a small joystick development library + console tool
+written in C by Tim 'pez2001' Theede (c) 2008.
+Released under the GPL License.
+If you need some other license contact the author
+at pez2001@voyagerproject.de.
+
+to compile it you need to have cmake on your system.
+(one object + no deps = shouldnt be too hard to compile
+ if you dont have cmake or don't want to install it)
+
+
+Tested and written under Linux(debian based system).
+
+
+Have fun with it.
+
+
+
+You can take a look at: 
+http://www.mjmwired.net/kernel/Documentation/input/joystick-api.txt
+to get an idea what this library does,which friendly spoken is not much.
+
+or at:
+libjoytest.c
+to see how to access the library functions and get a quick start.
+
+Notes on joytool:
+If you choose to get the values without the wait/wait_for_complete option 
+you should never set the timeout value to values under 20 ms,
+inconsistencies may appear if you do depending on your configuration.

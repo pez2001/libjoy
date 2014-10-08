@@ -1,0 +1,4 @@
+/usr/bin/joytool
+/usr/bin/libjoytest
+/usr/lib/libjoy.so
+/usr/include/libjoy.h

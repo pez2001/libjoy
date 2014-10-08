@@ -1,0 +1,14 @@
+Source: libjoy
+Section: devel
+Priority: extra
+Maintainer: Tim Theede <pez2001@voyagerproject.de>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: libjoy
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libjoy is a small library to easily access joysticks
+ libjoy is a small development library written in C
+ it also contains a console application to easy the task
+ of using joysticks as input in shell scripts.

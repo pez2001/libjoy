@@ -1,0 +1,1 @@
+/usr/bin/gcc  -fPIC    -shared -Wl,-soname,libjoy.so -o libjoy.so "CMakeFiles/joy.dir/libjoy.o" 

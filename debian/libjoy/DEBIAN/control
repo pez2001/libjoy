@@ -1,0 +1,12 @@
+Package: libjoy
+Version: 0.2
+Architecture: i386
+Maintainer: Tim Theede <pez2001@voyagerproject.de>
+Installed-Size: 96
+Depends: libc6 (>= 2.6-1)
+Section: devel
+Priority: extra
+Description: libjoy is a small library to easily access joysticks
+ libjoy is a small development library written in C
+ it also contains a console application to easy the task
+ of using joysticks as input in shell scripts.
