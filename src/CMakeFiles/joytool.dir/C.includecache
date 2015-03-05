@@ -1,4 +1,12 @@
-/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.c
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pez2001/development/libjoy/src/joytool.c
 ctype.h
 -
 stdio.h
@@ -14,13 +22,13 @@ sys/time.h
 sys/types.h
 -
 joytool.h
-/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h
+/home/pez2001/development/libjoy/src/joytool.h
 
-/home/pez2001/libjoy-dev/libjoy-0.1/src/joytool.h
+/home/pez2001/development/libjoy/src/joytool.h
 libjoy.h
-/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h
+/home/pez2001/development/libjoy/src/libjoy.h
 
-/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h
+/home/pez2001/development/libjoy/src/libjoy.h
 linux/joystick.h
 -
 

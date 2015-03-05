@@ -1,8 +1,16 @@
-/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pez2001/development/libjoy/src/libjoy.h
 linux/joystick.h
 -
 
-/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoytest.c
+/home/pez2001/development/libjoy/src/libjoytest.c
 stdio.h
 -
 unistd.h
@@ -12,5 +20,5 @@ stdlib.h
 string.h
 -
 libjoy.h
-/home/pez2001/libjoy-dev/libjoy-0.1/src/libjoy.h
+/home/pez2001/development/libjoy/src/libjoy.h
 

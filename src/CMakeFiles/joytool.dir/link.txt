@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/joytool.dir/joytool.o  -o joytool -rdynamic libjoy.so -Wl,-rpath,/home/pez2001/development/libjoy/src: 

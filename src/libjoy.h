@@ -125,6 +125,13 @@ int ljoy_GetButtonsNum(int id);
 //             returns an int > 0
 //             (the struct may be modified during call)
 //
+// struct js_event {
+//	__u32 time;	/* event timestamp in milliseconds */
+//	__s16 value;	/* value */
+//	__u8 type;	/* event type */
+//	__u8 number;	/* axis/button number */
+// };
+//
 // returns an int
 //             -1 = no event in queue / or error if in blocking mode
 //             sizeof(js_event) = the values of an event have been 
@@ -271,7 +278,7 @@ int ljoy_sm_AddDevice(int id);
 //
 // parameters: int id = identifier received from an ljoy_Open call
 //
-// returns an int
+// returns an into
 // 1 = error removing device (device was not added to the state manager before)
 // 0 = removing was successful
 //

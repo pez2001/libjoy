@@ -1,0 +1,1 @@
+/usr/bin/gcc      CMakeFiles/libjoytest.dir/libjoytest.o  -o libjoytest -rdynamic libjoy.so -Wl,-rpath,/home/pez2001/development/libjoy/src: 

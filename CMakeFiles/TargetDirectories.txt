@@ -1,0 +1,3 @@
+/home/pez2001/development/libjoy/src/CMakeFiles/joy.dir
+/home/pez2001/development/libjoy/src/CMakeFiles/joytool.dir
+/home/pez2001/development/libjoy/src/CMakeFiles/libjoytest.dir
